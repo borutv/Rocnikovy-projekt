@@ -10,3 +10,13 @@ program sa snaží najsť tvár z obrazu ktorý si zoberie z kamery. Potom čo n
 Výstup:
 
 ![alt text](https://raw.githubusercontent.com/borutv/Rocnikovy-projekt/master/Priklad.png)
+
+
+Výstup v konzole:
+
+eye1 x:751
+eye1 y:226
+eye1 z:16
+eye2 x:624
+eye2 y:226
+eye2 z:16
