@@ -11,14 +11,14 @@ Vlastnosti algoritmu Viola-Jones, ktoré ho robia dobrým detekčným algoritmom
 
 -Spracovávanie v realnom čase
 
--Iba detekcia tváre (nie je rozpoznávanie)
+-Iba detekcia tváre (nie jej rozpoznávanie)
 
 
 Algoritmus má štyri fázy:
 
 -Vybrať funkciu Haar
 
--Vytvorenie integrovaného obrázka
+-Vytvorenie integralného obrázka
 
 -Adaboost Training
 
@@ -37,24 +37,22 @@ Zloženie vlastností, ktoré tvoria kompatibilné tvárové vlastnosti:
 
 
 Umiestnenie a veľkosť: oči, ústa, most nosa
-Hodnota: orientované gradienty intenzít pixelov
-Štyri funkcie zodpovedajúce tomuto algoritmu sa potom hľadajú na obrázku tváre (znázornenej vpravo).
 
 Vlastnosti obdĺžnika:
 
 
 Hodnota = Σ (pixely v čiernej oblasti) - Σ (pixely v bielej oblasti)
-Tri typy: dva, tri, štyri obdĺžniky, Viola & Jones používali dva obdĺžnikové prvky
-Napríklad: rozdiel v jasnosti medzi bielymi a čiernou obdĺžnikmi v určitej oblasti
-Každá funkcia súvisí so špeciálnou polohou v podokne
+Tri typy: dva, tri, štyri obdĺžniky, Viola & Jones používali dva obdĺžnikové prvky.
+Napríklad: rozdiel v jasnosti medzi bielymi a čiernými obdĺžnikmi v určitej oblasti.
+Každá funkcia súvisí so špeciálnou polohou v podokne.
 
 
-Obrazové zobrazenie nazývané integrálny obraz hodnotí obdĺžnikové prvky v konštantnom čase, čo im dáva značnú rýchlostnú výhodu oproti sofistikovanejším alternatívnym funkciám. Keďže obdĺžniková oblasť každého objektu je vždy susedia s aspoň jedným ďalším obdĺžnikom, z toho vyplýva, že akýkoľvek prvok dvoch obdĺžnikov možno vypočítať v šiestich referenčných poliach, v ľubovoľnom z troch obdĺžnikových prvkov a v ľubovoľných deviatich funkciách štyroch obdĺžnikov.
+Obrazové zobrazenie nazývané integrálny obraz hodnotí obdĺžnikové prvky v konštantnom čase, čo im dáva značnú rýchlostnú výhodu oproti sofistikovanejším alternatívnym funkciám. Keďže obdĺžniková oblasť každého objektu je vždy susedia s aspoň jedným ďalším obdĺžnikom, z toho vyplýva, že akékoľvek dva obdĺžníky možno vypočítať v šiestich referenčných poliach, akékoľvek tri v ôsmych a akékoľvek štyri v deviatich.
 
 ______________________________________________________________________
 
 
-Tento program by sa dal použiť ako jeden z modulov do bakalárskej práce v ktorej riešim pohľadovo závislé stereoo zobrazenie. A modul tým, že mi v realnom čase vracia polohu očí tak dokážem zobrazovaný 3d model natáčať v závislosti od polohy hlavy a tým vytvárať dojem, že to je naozaj pred nami.
+Tento program by sa dal použiť ako jeden z modulov do bakalárskej práce v ktorej riešim pohľadovo závislé stereo zobrazenie. Tým, že mi v realnom čase vracia polohu očí tak dokážem zobrazovaný 3d model natáčať v závislosti od polohy hlavy a tým vytvárať dojem, že to je naozaj pred nami.
 
 Krátky popis programu:
 
