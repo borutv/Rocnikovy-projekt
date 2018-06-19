@@ -56,7 +56,7 @@ Tento program by sa dal použiť ako jeden z modulov do bakalárskej práce v kt
 
 Krátky popis programu:
 
-program sa snaží najsť tvár z obrazu ktorý si zoberie z kamery. Potom čo nájde tvár sa snaží nájsť oči a teda ich stred a následne okolo ich opíše kružnicu s nejakym polomerom r co bude nasledne náš default_z dokym nestratime tú tvár. Potom čo úspešne našiel oči a opisal kružnicu mi vypíše do konzoly ich suradnice [X, Y, default_z -radius+default_z].
+program sa snaží najsť tvár z obrazu ktorý si zoberie z kamery. Potom čo nájde tvár sa snaží nájsť oči a teda ich stred a následne okolo nich opíše kružnicu s nejakym polomerom r co bude nasledne náš default_z dokym nestratime tú tvár. Potom čo úspešne našiel oči a opisal kružnicu mi vypíše do konzoly ich suradnice [X, Y, default_z -radius+default_z].
 
 Výstup:
 
